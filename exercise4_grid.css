@@ -1,0 +1,40 @@
+div {
+    border: 1px solid black;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 80% 20%;
+}
+
+#one {
+    grid-row: 1/2;
+}
+
+
+#Three {
+    grid-row: 1/-1;
+
+}
+
+#Four {
+    grid-column: 1/3;
+}
+
+#Two {
+    display: grid;
+    grid-row: 1/2;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% auto auto;
+
+}
+
+#Two-one {
+    grid-row: 1/-1
+}
+
+#Two-four {
+    grid-row: 1/-1
+}

@@ -1,0 +1,19 @@
+div {
+    border: 1px solid black;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% auto;
+}
+
+.One {
+    grid-column: 2/-1;
+
+}
+
+.Two {
+    grid-row: 1/-1;
+}

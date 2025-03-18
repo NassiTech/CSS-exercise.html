@@ -1,0 +1,64 @@
+h1 {
+    color: darkred;
+}
+
+p {
+    font-size: 30px;
+}
+
+#idHaupttitel {
+    font-weight: bold;
+}
+
+.hervorgehoben,
+.markiert {
+    color: red;
+}
+
+/* All elements p in all elements (without , comma because all elements in all elements  with class classP*/
+.classP p {}
+
+/* CSS selectors : descendent combinator .inhalt h2*/
+.inhalt h2 {
+    text-decoration: underline;
+}
+
+/* . Input Felder sollen Schwarz mit weißer Schrift sein, wenn fokussiert
+Button soll beim drüber hovern grün sein */
+
+input:focus {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
+    color: beige;
+}
+
+/* # id liste */
+#list:first-child,
+#list:last-child {
+    font-weight: bold;
+}
+
+/* pseudo elements*/
+/* makers */
+li::marker {
+    content: "👉";
+    /*window key& .* emojis ....symbols*/
+    color: black;
+    font-weight: bold
+}
+
+/* Den ersten Buchstaben, jedes Ersten Kindes jeder unordered list im Dokument
+fett schreiben */
+/*thre blanc means jump one generation down*/
+ul :first-child::first-letter {
+    font-weight: bold;
+    color: green;
+}
+
+input[type=email] {
+    border: red 2px solid;
+}
